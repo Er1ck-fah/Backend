@@ -33,8 +33,8 @@ A multiuser platform where users can write a daily journal, and record daily act
 
 - Day 1
     
-     -1. Automate server restarting process (nodemon)
-     -2. Create router middleware
-     -3. Test routes using postman
-     -4. Setup Database (mongodb: mongod,mongodb_compact,mongoose)
-     -5. Create Database Model
+     - Automate server restarting process (nodemon)
+     - Create router middleware
+     - Test routes using postman
+     - Setup Database (mongodb: mongod,mongodb_compact,mongoose)
+     - Create Database Model
