@@ -1,0 +1,29 @@
+{
+  "name": "backend_express",
+  "version": "0.0.1",
+  "description": "## Private Backend (REST API) A multiuser platform where users can write a daily journal, and record daily activities.",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js",
+    "database": "./mongodb/bin/mongod --dbpath=database"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Er1ck-fah/Backend.git"
+  },
+  "author": "Erick KONGNE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Er1ck-fah/Backend/issues"
+  },
+  "homepage": "https://github.com/Er1ck-fah/Backend#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
