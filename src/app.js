@@ -37,16 +37,14 @@ const app = express()
 
 app.use(bodyParser.json())
 
-app.use('/users',function(req,res){
-    const user = {
-        "username":"erick",
-        "password":"qwertz"
+app.use('/users',async function(req,res){
+    try {
+        const user = await User.find()
+        res.json(user)
+    } catch (e) {
+        console.log(e)
+        res.json({msg:'There is an error'})
     }
-    res.json(user)
-})
-app.post('/login-user',function(req,res){
-    console.log(req.body)
-    res.json({msg:'Success'})
 })
 
 app.post('/user/register',async(req,res) => {
